@@ -1,0 +1,9 @@
+services:
+  backend:
+    build:
+      context: ./code
+      dockerfile: Dockerfile
+    volumes:
+      - ./database:/database
+    ports:
+      - "8000:8000"
